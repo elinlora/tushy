@@ -34,6 +34,7 @@ button {
   --clr-primary-600: #bbd1c9;
   --clr-primary-700: #f3e9e2;
   --clr-primary-800: #d1cdca;
+  --clr-primary-900: #c6a462;
 
   --ff-primary: 'Poppins', san-serif;
   --ff-secondary: 'Lora', serif;
@@ -82,11 +83,6 @@ header {
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 62em) {
-  .header-top .header-container {
-  }
-}
-
 .header-top__nav-left,
 .header-top__nav-right {
   display: none;
@@ -104,6 +100,12 @@ header {
     font-weight: 500;
     text-transform: uppercase;
     color: var(--clr-primary-400);
+  }
+  .header-top__nav-left a:hover,
+  .header-top__nav-left a:focus,
+  .header-top__nav-right a:hover,
+  .header-top__nav-right a:focus {
+    color: var(--clr-primary-900);
   }
   .header-top__nav-left {
     gap: 3em;
