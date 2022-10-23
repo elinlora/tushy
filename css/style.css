@@ -27,6 +27,10 @@ button {
   border: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-secondary);
+}
+
 :root {
 
   --clr-primary-400: #1f1c1d;
@@ -61,6 +65,26 @@ body {
   max-width: 85rem;
 }
 /* ======> Layout <====== */
+
+/* ======> Utility <====== */
+.btn {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.375rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  padding: .5em 1.2em;
+  border-radius: .7rem;
+  background-color: var(--clr-primary-500);
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 90%;
+}
+/* ======> Utility <====== */
 
 header {
   padding: .5em 0;
@@ -176,7 +200,7 @@ header {
 
 @media only screen and (min-width: 48em) {
   .hero {
-    height: 45rem;
+    height: 50rem;
     background-image: url('/img/green-wave.png'), url('/img/hero-tablet.jpg');
     background-size: 120rem, cover;
   }
@@ -184,8 +208,76 @@ header {
 
 @media only screen and (min-width: 62em) {
   .hero {
-    height: 45rem;
     background-image: url('/img/green-wave.png'), url('/img/hero-desktop.jpg');
     background-size: 180rem, cover;
+  }
+}
+
+.hero {
+  padding: 2em 6em;
+  text-align: right;
+}
+
+@media only screen and (min-width: 62em) {
+  .hero {
+    padding-top: 3em;
+  }
+}
+
+.hero__heading {
+  font-size: 2.125rem;
+  font-weight: 700;
+  line-height: 1.1;
+  display: none;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero__heading {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .hero__heading {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+
+.hero__body {
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: .6em;
+  display: none;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero__body {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .hero__body {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+}
+
+.hero .btn {
+  margin-top: .75em;
+  display: none;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero .btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .hero .btn {
+    margin-top: 1.2em;
   }
 }
