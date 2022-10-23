@@ -12,15 +12,28 @@
 <body>
   <!-- ======> Header <====== -->
   <header>
+    <!-- Header Top -->
     <section class="header-top">
       <div class="header-container">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars header-top__hamburger"></i>
+        <nav class="header-top__nav-left">
+          <a href="#">shop<i class="fa-solid fa-chevron-down header-top__chevron"></i></a>
+          <a href="#">featured<i class="fa-solid fa-chevron-down header-top__chevron"></i></a>
+        </nav>
         <a href="#">
           <img class="header-top__img" src="img/header-logo.png" alt="Tushy">
         </a>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="header-top__login-cart">
+          <nav class="header-top__nav-right">
+            <a href="#">more<i class="fa-solid fa-chevron-down header-top__chevron"></i></a>
+            <a href="#">login</a>
+          </nav>
+          <i class="fa-solid fa-cart-shopping header-top__cart"></i>
+        </div>
       </div>
     </section>
+    <!-- / Header Top -->
+    <!-- Header Bottom -->
     <section class="header-btm">
       <div class="container">
         <nav>
@@ -34,6 +47,7 @@
         </nav>
       </div>
     </section>
+    <!-- / Header Bottom -->
   </header>
   <!-- ======> / Header <====== -->
   <!-- ======> Main <====== -->

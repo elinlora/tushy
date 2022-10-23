@@ -70,15 +70,69 @@ header {
   z-index: 99;
 }
 
+@media only screen and (min-width: 62em) {
+  header {
+    padding: 1.2em 0;
+  }
+}
+
 .header-top .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-top i {
+@media only screen and (min-width: 62em) {
+  .header-top .header-container {
+  }
+}
+
+.header-top__nav-left,
+.header-top__nav-right {
+  display: none;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-top__nav-left,
+  .header-top__nav-right {
+    display: flex;
+    align-items: center;
+  }
+  .header-top__nav-left a,
+  .header-top__nav-right a {
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--clr-primary-400);
+  }
+  .header-top__nav-left {
+    gap: 3em;
+  }
+  .header-top__nav-right {
+    gap: .5em;
+    margin-right: 2em;
+  }
+}
+
+.header-top__hamburger,
+.header-top__cart {
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.header-top__chevron {
+  margin-left: .5em;
+}
+
+.header-top__login-cart {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-top__hamburger {
+    display: none;
+  }
 }
 
 .header-top__img {
@@ -87,6 +141,12 @@ header {
 
 .header-btm {
   margin-top: 1em;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-btm {
+    display: none;
+  }
 }
 
 .header-btm nav {
