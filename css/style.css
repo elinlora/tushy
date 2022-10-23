@@ -96,8 +96,9 @@ header {
   }
   .header-top__nav-left a,
   .header-top__nav-right a {
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 500;
+    letter-spacing: .1rem;
     text-transform: uppercase;
     color: var(--clr-primary-400);
   }
@@ -138,7 +139,7 @@ header {
 }
 
 .header-top__img {
-  width: 10rem;
+  width: 9rem;
 }
 
 .header-btm {
@@ -162,4 +163,29 @@ header {
 .header-btm__link {
   color: var(--clr-primary-400);
   white-space: nowrap;
+}
+
+.hero {
+  height: 21rem;
+  width: 100vw;
+  background-image: url('/img/beige-wave.png'), url('/img/hero-mobile.jpg');
+  background-size: 70rem, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero {
+    height: 45rem;
+    background-image: url('/img/green-wave.png'), url('/img/hero-tablet.jpg');
+    background-size: 120rem, cover;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .hero {
+    height: 45rem;
+    background-image: url('/img/green-wave.png'), url('/img/hero-desktop.jpg');
+    background-size: 180rem, cover;
+  }
 }
