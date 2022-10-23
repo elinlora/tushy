@@ -77,12 +77,13 @@ body {
   padding: .5em 1.5em;
   border-radius: .7rem;
   background-color: var(--clr-primary-500);
-  transition: all .3s ease-in-out;
+  transition: background .3s ease-in-out;
 }
 
 .btn:hover,
 .btn:focus {
-  opacity: 90%;
+  color: var(--clr-primary-500);
+  background-color: #ffffff;
 }
 
 @media only screen and (min-width: 48em) {
@@ -319,4 +320,62 @@ header {
 
 .sub-mobile-hero .btn {
   margin-top: 1em;
+}
+
+.social-proof {
+  background-color: var(--clr-primary-600);
+  background-image: url('/img/beige-wave.png');
+  background-size: 70rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  padding-bottom: 9em;
+}
+
+@media only screen and (min-width: 48em) {
+  .social-proof {
+    background-size: 120rem;
+    padding-bottom: 13em;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .social-proof {
+    background-size: 180rem;
+    padding-bottom: 21em;
+  }
+}
+
+.social-proof__heading {
+  font-size: 1.5rem;
+  color: var(--clr-primary-500);
+}
+
+@media only screen and (min-width: 48em) {
+  .social-proof__heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .social-proof__heading {
+    font-size: 2.25rem;
+  }
+}
+
+.social-proof__images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 62em) {
+  .social-proof__images {
+    gap: 4em;
+    margin-top: 3em;
+  }
 }
