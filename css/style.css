@@ -92,6 +92,46 @@ body {
     padding: .5em 1.2em;
   }
 }
+
+.prod-head {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 62em) {
+  .prod-head {
+    font-size: 2.25rem;
+  }
+}
+
+.prod-body {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 62em) {
+  .prod-body {
+    font-size: 1.375rem;
+  }
+}
+
+.link {
+  display: inline-block;
+  color: var(--clr-primary-500);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.link:hover,
+.link:focus {
+  opacity: 75%;
+}
+
+@media only screen and (min-width: 62em) {
+  .link {
+    font-size: 1.375rem;
+  }
+}
+
 /* ======> Utility <====== */
 
 header {
@@ -378,4 +418,68 @@ header {
     gap: 4em;
     margin-top: 3em;
   }
+}
+
+.tushy-bidet {
+  background-color: var(--clr-primary-700);
+}
+
+.tushy-bidet .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-bidet .container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 3em;
+  }
+}
+
+.tushy-bidet__image {
+  width: 21rem;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-bidet__image {
+    width: 24rem;
+  }
+}
+
+.tushy-bidet__product-text {
+  text-align: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-bidet__product-text {
+    width: 55%;
+    text-align: unset;
+  }
+}
+
+.tushy-bidet__body {
+  margin-top: 1em;
+}
+
+.tushy-bidet__btn-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-bidet__btn-link {
+    flex-direction: row;
+    gap: 2em;
+  }
+}
+
+.tushy-bidet .btn {
+  margin-top: 1em;
+}
+
+.tushy-bidet .link {
+  margin-top: 1em;
 }
