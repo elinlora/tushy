@@ -434,52 +434,128 @@ header {
   .tushy-bidet .container {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    gap: 3em;
+    gap: 7em;
   }
 }
 
-.tushy-bidet__image {
+.tushy-product__image {
   width: 21rem;
 }
 
 @media only screen and (min-width: 62em) {
-  .tushy-bidet__image {
+  .tushy-product__image {
     width: 24rem;
   }
 }
 
-.tushy-bidet__product-text {
+.tushy-product__text {
   text-align: center;
 }
 
 @media only screen and (min-width: 62em) {
-  .tushy-bidet__product-text {
+  .tushy-product__text {
     width: 55%;
     text-align: unset;
   }
 }
 
-.tushy-bidet__body {
+.tushy-product__body {
   margin-top: 1em;
 }
 
-.tushy-bidet__btn-link {
+.tushy-product__btn-link {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @media only screen and (min-width: 62em) {
-  .tushy-bidet__btn-link {
+  .tushy-product__btn-link {
     flex-direction: row;
     gap: 2em;
   }
 }
 
-.tushy-bidet .btn {
+.tushy-product__text .btn {
   margin-top: 1em;
 }
 
-.tushy-bidet .link {
+.tushy-product__btn-link .link {
   margin-top: 1em;
+}
+
+.tushy-ottoman {
+  background-color: var(--clr-primary-700);
+  padding-top: 4.5em;
+}
+
+.tushy-ottoman .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-ottoman .container {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 7em;
+  }
+}
+
+.tushy-travel {
+  background-color: var(--clr-primary-700);
+  padding-top: 4.5em;
+}
+
+.tushy-travel .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-travel .container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 7em;
+  }
+}
+
+.tushy-bamboo-tp {
+  background-color: var(--clr-primary-700);
+  padding-top: 4.5em;
+}
+
+.tushy-bamboo-tp .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-bamboo-tp .container {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 7em;
+  }
+}
+
+.tushy-bamboo-towel {
+  background-color: var(--clr-primary-700);
+  padding-top: 4.5em;
+}
+
+.tushy-bamboo-towel .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-bamboo-towel .container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 7em;
+  }
 }
