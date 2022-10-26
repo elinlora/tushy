@@ -865,7 +865,13 @@ header {
 .socials {
   background-color: var(--clr-primary-700);
   text-align: center;
-  padding-bottom: 3em;
+  padding-bottom: 1.8em;
+}
+
+@media only screen and (min-width: 48em) {
+  .socials {
+    padding-bottom: 3em;
+  }
 }
 
 .socials__heading {
@@ -933,4 +939,15 @@ header {
 .socials__reviewed-img {
   width: 4.5rem;
   margin-top: 2em;
+}
+
+.contact-us {
+  background-color: var(--clr-primary-500);
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+.contact-us__text {
+  color: #fff;
+  font-weight: 500;
 }
