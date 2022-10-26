@@ -543,7 +543,25 @@ header {
 
 .tushy-bamboo-towel {
   background-color: var(--clr-primary-700);
-  padding-top: 4.5em;
+  background-image: url('/img/white-wave.png');
+  background-size: 70rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 4.5em 0 9em;
+}
+
+@media only screen and (min-width: 48em) {
+  .tushy-bamboo-towel {
+    background-size: 120rem;
+    padding-bottom: 13rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .tushy-bamboo-towel {
+    background-size: 180rem;
+    padding-bottom: 21rem;
+  }
 }
 
 .tushy-bamboo-towel .container {
@@ -558,4 +576,8 @@ header {
     justify-content: flex-end;
     gap: 7em;
   }
+}
+
+.bestsellers {
+  background-color: #ffffff;
 }
