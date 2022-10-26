@@ -957,3 +957,8 @@ header {
   color: #fff;
   font-weight: 500;
 }
+
+.contact-us__text:hover,
+.contact-us__text:focus {
+  color: var(--clr-primary-900);
+}
