@@ -40,6 +40,8 @@ h1, h2, h3, h4, h5, h6 {
   --clr-primary-800: #d1cdca;
   --clr-primary-900: #c6a462;
 
+  --clr-neutral-400: #767676;
+
   --ff-primary: 'Poppins', san-serif;
   --ff-secondary: 'Lora', serif;
 
@@ -820,4 +822,42 @@ header {
   font-size: 1.375rem;
   font-family: var(--ff-primary);
   font-weight: 600;
+}
+
+.guaranteed {
+  background-color: var(--clr-primary-800);
+  text-align: center;
+  background-image: url('/img/beige-wave.png');
+  background-size: 70rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 9em;
+}
+
+@media only screen and (min-width: 48em) {
+  .guaranteed {
+    background-size: 120rem;
+    padding-bottom: 13em;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .guaranteed {
+    background-size: 180rem;
+    padding-bottom: 21em;
+  }
+}
+
+.guaranteed__body {
+  font-size: .875rem;
+  line-height: 1.5;
+  color: var(--clr-neutral-400);
+}
+
+@media only screen and (min-width: 48em) {
+  .guaranteed__body {
+    font-size: 1.2rem;
+    max-width: 70%;
+    margin: 0 auto;
+  }  
 }
