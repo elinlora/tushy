@@ -665,3 +665,109 @@ header {
 .bestsellers .btn {
   margin-top: .75em;
 }
+
+.reviews {
+  background-color: var(--clr-primary-600);
+  background-image: url('/img/white-wave.png');
+  background-size: 70rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 9em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .reviews {
+    background-size: 120rem;
+    padding-bottom: 13em;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .reviews {
+    background-size: 180rem;
+    padding-bottom: 21em;
+  }
+}
+
+.reviews__customers {
+  display: flex;
+  justify-content: space-between;
+  gap: 7em;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.reviews__reviewer {
+  min-width: 21rem;
+  height: 21rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  padding: 2.7em;
+  color: #fff;
+  background-color: var(--clr-primary-800);
+  background-blend-mode: multiply;
+}
+
+.caleb {
+  background-image: url('/img/caleb.gif');
+  background-size: cover;
+}
+.matt {
+  background-image: url('/img/matt.gif');
+  background-size: cover;
+}
+.michelle {
+  background-image: url('/img/michelle.gif');
+  background-size: cover;
+}
+.ralph {
+  background-image: url('/img/ralph.gif');
+  background-size: cover;
+}
+.lottie {
+  background-image: url('/img/lottie.gif');
+  background-size: cover;
+}
+
+.reviews__quote {
+  font-size: 2rem;
+}
+
+.reviews__name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: .6em;
+}
+
+.ellipsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-top: 4.5em;
+}
+
+.dot {
+  background-color: #000;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--clr-primary-00);
+  border: .125rem solid #000;
+}
+
+.reviews .btn {
+  margin-top: 3em;
+}
+
+@media only screen and (min-width: 62em) {
+  .reviews .btn {
+    /* margin-top: 6em; */
+  }
+}
