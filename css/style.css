@@ -580,4 +580,55 @@ header {
 
 .bestsellers {
   background-color: #ffffff;
+  text-align: center;
+}
+
+.bestsellers__heading {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+@media only screen and (min-width: 62em) {
+  .bestsellers__heading {
+    font-size: 1.625rem;
+  }
+}
+
+.bestsellers__products {
+  display: flex;
+  flex-direction: column;
+  gap: 2.7em;
+  margin-top: 2.1em;
+}
+
+@media only screen and (min-width: 62em) {
+  .bestsellers__products {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.bestsellers__title {
+  font-family: var(--ff-primary);
+  font-size: 1.375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bestsellers__description {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 62em) {
+  .bestsellers__description {
+    font-size: 1.375rem;
+  }
+}
+
+.bestsellers .btn {
+  margin-top: .75em;
 }
