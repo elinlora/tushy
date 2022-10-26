@@ -145,8 +145,12 @@ header {
 
 @media only screen and (min-width: 62em) {
   header {
-    padding: 1.2em 0;
+    padding: 1.5em 0;
   }
+}
+
+.header-top {
+  position: relative;
 }
 
 .header-top .header-container {
@@ -212,6 +216,15 @@ header {
 
 .header-top__img {
   width: 9rem;
+}
+
+@media only screen and (min-width: 62em) {
+  .header-top__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .header-btm {
@@ -580,7 +593,26 @@ header {
 
 .bestsellers {
   background-color: #ffffff;
+  background-image: url('/img/green-wave.png');
+  background-size: 70rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 9em;
   text-align: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .bestsellers {
+    background-size: 120rem;
+    padding-bottom: 13em;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .bestsellers {
+    background-size: 180rem;
+    padding-bottom: 21em;
+  }
 }
 
 .bestsellers__heading {
@@ -608,6 +640,7 @@ header {
   .bestsellers__products {
     flex-direction: row;
     justify-content: center;
+    gap: 7.2em;
   }
 }
 
